@@ -1,0 +1,14 @@
+                                    #Identify Internal Domain #
+    $net view /domain
+    $net view \\computername
+    $net  view \\computerName /all
+    $net view / network:nw 
+    after finding domain name , you try below porcess host discover 
+
+                                # Identify host #
+    $net view /domian:Domain_name       //এখানে Domain_name জায়গায় প্রথমে যে Domain_name পেয়েছি সেটি দিতে হবে।
+    $systeminfo | findstr /B /C:"Domain"\
+    $ echo %userdomain%     //find logged username
+
+                                #IP range of subnet#
+    $arp -a    
