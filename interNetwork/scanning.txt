@@ -1,0 +1,1 @@
+# download target website core funtionality ,and run it local device and see how to work it .
